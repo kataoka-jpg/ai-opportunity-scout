@@ -71,7 +71,7 @@ if st.button("AI活用機会を分析・生成", type="primary"):
             with st.spinner("分析中..."):
                 client = genai.Client(api_key=api_key)
                 response = client.models.generate_content(
-                    model="gemini-2.5-pro",
+                    model="gemini-3.1-pro-preview",
                     contents=prompt,
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
